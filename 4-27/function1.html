@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闭包函数 全局变量 局部变量</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // arguments 当函数没有定义的时候可以调用函数
+    // function test(){
+    //     console.log(arguments)
+    // }
+    // text('a','v','b',11,22)
+
+    // 二
+    // function add(num1,num2){
+    //     return num1+num2
+    // }
+
+    // function test(fun,a,b){
+    //     return fun(a,b)
+    // }
+
+    // console.log(test(add,11,22))
+
+
+    // function add(){
+    //     return "Hello World"
+    // }
+    // function test(){
+    //     return add
+    // }
+    // console.log(test()())  
+
+    // 局部变量  全局变量
+    //     var aa="hzx"
+    //     function test(){
+    //         // console.log(1111)
+    //         function f1(){
+    //         console.log(aa)
+    //     }
+    //     return f1
+    //     }
+    //    test()()
+
+
+
+    function f1() {
+        var a = "hello"
+
+        function f2() {
+            return a
+        }
+        return f2
+    }
+    console.log(f1()())
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var obj={
+        names:12,
+        age:11,
+        sex:11
+    }
+    // 向obj中添加一个属性
+    obj.email=12
+    console.log(obj)
+    // 删除obj中的一个属性
+    delete obj.sex
+    console.log(obj)
+
+
+    // 遍历数组 array.forEach
+    // 对象的便利/枚举 for in
+    // k代表对象里的属性名
+        for(k in obj){
+           console.log(k)
+           console.log(k,obj[k])
+        }
+    
+
+
+
+</script>

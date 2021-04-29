@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义属性</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+   var obj={}
+//    Object.defineProperty 固定写法
+   Object.defineProperty(obj,"name",{
+    value:"侯朝雪",  //属性的值
+    configurable:true, //属性是否可以delete删除
+    writable:true, //属性是否可以被修改
+    enumerable:true //属性是否可枚举 for in
+   })
+// 默认都是false  
+Object.defineProperty(obj,"age",{
+    value:11,
+    enumerable:true,
+    configurable:true,
+    writable:true,
+})
+
+obj.email="ojjnnnn@qq.com"
+
+// delete
+delete obj.name
+
+// 枚举
+for(k in obj){
+    console.log(k)
+}
+
+obj.age=88
+console.log(obj)
+
+
+</script>

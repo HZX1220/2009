@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function hello(){
+
+    // }
+    // console.log(hello.prototype);
+    // console.log(typeof(hello.prototype))  //原型是一个对象类型
+
+    // 定义一个构造函数
+//    var obj={};
+//    obj.name='noname';
+//    obj.age=12;
+//    obj.sex='男';
+//    console.log(obj);
+
+    function Person(){
+        //  this.name=name,
+        //  this.age=age;
+        //  this.sex=sex;
+    }
+
+    Person.prototype.name='noname';
+    Person.prototype.age='12';
+    Person.prototype.sex='男';
+    // console.log(Person.prototype)
+
+    var p1=new Person();
+    console.log(p1);
+    console.log(p1.name);
+    console.log(p1.age);
+    console.log(p1.sex);
+
+    var p2=new Person();
+    console.log(p2)
+    console.log(p2.name);
+    console.log(p2.age);
+    console.log(p2.sex);
+
+    
+
+    function Perso(name,age,sex){
+         this.name=name,
+         this.age=age;
+         this.sex=sex;
+    }
+
+    var p3=new Perso('12',12,'12');
+    console.log(p3)
+</script>

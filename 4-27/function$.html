@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>封装选择器</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script src='js/jquery-3.6.0.min.js'></script>
+<script>
+    function $(el){
+        var i=el[0]
+        if(i=="#"){
+            alert('id选择器')
+        }else if(i=="."){
+            alert('class选择器')
+        }else{
+            alert('元素选择器')
+        }
+    }
+
+    $("btn")
+</script>

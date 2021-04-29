@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统定义对象的方式 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 创建对象的方式
+    // 1 从构造函数中new一个
+    function Person(name,age,sex){
+        this.name=name
+        this.age=age;
+        this.sex=sex
+    }
+    var p1=new Person(12,12,12);
+    var p2=new Person(13,13,13)
+
+    // 2对象字面量  {}
+    var obj1={}
+    var obj2={
+        color:'red',  //属性
+        width:"100px",  //属性
+    }
+//    添加一个方法   方法就是一个属性
+   obj2.hello=function(){
+       alert('123')
+   }
+    // 对象由属性和方法组成
+    console.log(obj2.color) //red
+    obj2.hello();  //调用方法
+     
+
+
+
+</script>
